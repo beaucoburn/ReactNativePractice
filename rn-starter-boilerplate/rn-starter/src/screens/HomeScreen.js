@@ -1,11 +1,12 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
+import { Text, StyleSheet, View } from "react-native";
 
 const HomeScreen = () => {
   return (
-    <Text style={styles.text}>
-      This is the Home Screen
-    </Text>
+    <View>
+      <Text style={styles.text}>This is the Home Screen</Text>
+      <Text>Hello World!</Text>
+    </View>
   );
 };
 
