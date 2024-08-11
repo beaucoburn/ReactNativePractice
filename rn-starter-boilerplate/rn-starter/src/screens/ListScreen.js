@@ -8,7 +8,7 @@ const ListScreen = () => {
     { name: "Friend #3", age: 32 },
     { name: "Friend #4", age: 27 },
     { name: "Friend #5", age: 53 },
-    { name: "Friend #6", age: 30 }, 
+    { name: "Friend #6", age: 30 },
   ];
   return (
     <View>
@@ -18,7 +18,11 @@ const ListScreen = () => {
         keyExtractor={(friend) => friend.name}
         data={friends}
         renderItem={({ item }) => {
-          return <Text style={styles.textStyle}>{item.name} - Age {item.age}</Text>;
+          return (
+            <Text style={styles.textStyle}>
+              {item.name} - Age {item.age}
+            </Text>
+          );
         }}
       />
     </View>
@@ -26,11 +30,11 @@ const ListScreen = () => {
 };
 
 const styles = StyleSheet.create({
-  textStyle: { 
+  textStyle: {
     borderWidth: 1,
     borderColor: "black",
     padding: 10,
-  }
+  },
 });
 
 export default ListScreen;
