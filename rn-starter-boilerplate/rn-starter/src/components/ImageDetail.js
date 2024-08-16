@@ -1,12 +1,20 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Image } from 'react-native';
 
-const ImageDetail = () => {
+const ImageDetail = (props) => {
+
   return (
-    <Text>Image Detail</Text>
+    <View>
+      <Image source={props.imageSource} />
+      <Text style={styles.text}>{props.title}</Text>
+    </View>
   )
 }
 
 export default ImageDetail;
 
-const styles = StyleSheet.create();
+const styles = StyleSheet.create({
+  text: {
+    fontSize: 20,
+  }
+});
