@@ -1,13 +1,13 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
 
-const ImageDetail = (props) => {
+const ImageDetail = ({ imageSource, title, imageScore}) => {
 
   return (
     <View>
-      <Image source={props.imageSource} />
-      <Text style={styles.text}>{props.title}</Text>
-      <Text style={styles.score}>Image Score: {props.imageScore}</Text>
+      <Image source={imageSource} />
+      <Text style={styles.text}>{title}</Text>
+      <Text style={styles.text}>Image Score: <Text style={styles.score}>{imageScore}</Text></Text>
     </View>
   )
 }
@@ -20,6 +20,6 @@ const styles = StyleSheet.create({
   },
   score: {
     color: 'red',
-    fontSize: 15,
+    fontSize: 25,
   }
 });
