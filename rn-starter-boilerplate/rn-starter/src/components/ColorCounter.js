@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet, Button } from "react-native";
+import { View, Text, Button } from "react-native";
 
 const ColorCounter = ({ color, onIncrease, onDecrease }) => {
   return (
@@ -13,4 +13,4 @@ const ColorCounter = ({ color, onIncrease, onDecrease }) => {
 
 export default ColorCounter;
 
-const styles = StyleSheet.create({});
+//const styles = StyleSheet.create({});
