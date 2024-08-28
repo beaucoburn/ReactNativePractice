@@ -19,6 +19,7 @@ const reducer = (state, action) => {
 
 const SquareScreen = () => {
   const [state, dispatch] = useReducer(reducer, { red: 0, green: 0, blue: 0 });
+  const { red, green, blue } = state;
   return (
     <View>
       <ColorCounter
@@ -40,7 +41,7 @@ const SquareScreen = () => {
         style={{
           height: 150,
           width: 150,
-          backgroundColor: `rgb(${state.red}, ${state.green}, ${state.blue})`,
+          backgroundColor: `rgb(${red}, ${green}, ${blue})`,
         }}
       />
     </View>
