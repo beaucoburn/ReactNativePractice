@@ -11,12 +11,13 @@ const BoxScreen = () => {
 
 const styles = StyleSheet.create({
   viewStyle: {
-    borderWidth: 1,
+    borderWidth: 3,
     borderColor: 'black',
   },
   textStyle: {
-    borderWidth: 1,
+    borderWidth: 10,
     borderColor: 'red',
+    margin: 20,
   },
 });
 
