@@ -15,10 +15,15 @@ const styles = StyleSheet.create({
   viewStyle: {
     borderWidth: 3,
     borderColor: 'black',
+    alignItems: 'center',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    height: 100,
   },
   textStyle: {
     borderWidth: 3,
     borderColor: 'red',
+    flex: 1,
   },
 });
 
