@@ -32,11 +32,7 @@ const styles = StyleSheet.create({
   childStyleTwo: {
     borderWidth: 3,
     borderColor: 'blue',
-    position: 'absolute',
-    top: 0,
-    right: 0,
-    bottom: 0,
-    left: 0,
+    ...StyleSheet.absoluteFillObject
   },
   childStyleThree: {
     borderWidth: 3,
