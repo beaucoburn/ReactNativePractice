@@ -25,9 +25,18 @@ const styles = StyleSheet.create({
     borderColor: 'red',
     flex: 1,
   },
-  childStyleOne: {},
-  childStyleTwo: {},
-  childStyleThree: {},
+  childStyleOne: {
+    borderWidth: 3,
+    borderColor: 'blue',
+  },
+  childStyleTwo: {
+    borderWidth: 3,
+    borderColor: 'blue',
+  },
+  childStyleThree: {
+    borderWidth: 3,
+    borderColor: 'blue',
+  },
 });
 
 export default BoxScreen;
