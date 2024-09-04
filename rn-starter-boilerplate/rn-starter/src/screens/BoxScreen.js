@@ -3,16 +3,16 @@ import { View, Text, StyleSheet } from 'react-native';
 
 const BoxScreen = () => {
   return (
-    <View style={styles.viewStyle}>
-      <View style={styles.childStyleOne}></View>
-      <View style={styles.childStyleTwo}></View>
-      <View style={styles.childStyleThree}></View>
+    <View style={styles.parentStyle}>
+      <View style={styles.childStyleOne} />
+      <View style={styles.childStyleTwo} />
+      <View style={styles.childStyleThree} />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  viewStyle: {
+  parentStyle: {
     alignItems: 'flex-start',
     flexDirection: 'row',
     justifyContent: 'space-between',
