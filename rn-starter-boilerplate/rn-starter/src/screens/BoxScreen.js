@@ -20,23 +20,17 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     height: 100,
   },
-  textStyle: {
-    borderWidth: 3,
-    borderColor: 'red',
-    flex: 1,
-  },
   childStyleOne: {
-    borderWidth: 3,
-    borderColor: 'blue',
+    borderWidth: 1,
+    borderColor: 'red',
   },
   childStyleTwo: {
-    borderWidth: 3,
-    borderColor: 'blue',
-    ...StyleSheet.absoluteFillObject
+    borderWidth: 1,
+    borderColor: 'green',
   },
   childStyleThree: {
     borderWidth: 3,
-    borderColor: 'blue',
+    borderColor: 'purple',
   },
 });
 
