@@ -23,6 +23,10 @@ const SearchScreen = () => {
     }
   }
 
+  useEffect(() => {
+    searchApi(term);
+  }, []);
+
   return (
     <View>
       <SearchBar term={term} onTermChange={setTerm} onTermSubmit={() => searchApi(term)} />
