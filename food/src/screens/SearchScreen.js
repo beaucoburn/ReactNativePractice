@@ -20,7 +20,7 @@ const SearchScreen = () => {
 
   return (
     <View>
-      <SearchBar term={term} onTermChange={(newTerm) => setTerm(newTerm)} onTermSubmit={() =>  console.log('submitted')} />
+      <SearchBar term={term} onTermChange={setTerm} onTermSubmit={searchApi} />
       <Text>Search Screen</Text>
       <Text> We have found {results.length} results</Text>
     </View>
