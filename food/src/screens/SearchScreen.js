@@ -19,6 +19,7 @@ const SearchScreen = () => {
       <Text> We have found {results.length} results</Text>
       <ResultsList />
       <ResultsList />
+      <ResultsList />
     </View>
   );
 };
