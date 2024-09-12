@@ -20,7 +20,9 @@ export default () => {
     }
   }
 
-  useEffect(() => {
+  useEffect((term) => {
     searchApi(term);
   }, []);
-}
+
+  return [searchApi, results, errorMessage];
+};
