@@ -1,19 +1,19 @@
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import React from "react";
+import { View, Text, StyleSheet } from "react-native";
 
-const ResultsList = ({ title}) => {
+const ResultsList = ({ title }) => {
   return (
     <View style={styles.searchBar}>
       <Text style={styles.titleStyle}>{title}</Text>
     </View>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
   titleStyle: {
     fontSize: 18,
-    fontWeight: 'bold',
-  }
+    fontWeight: "bold",
+  },
 });
 
 export default ResultsList;
