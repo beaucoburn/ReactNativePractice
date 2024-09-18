@@ -5,15 +5,14 @@ const ResultsDetail = ({ result }) => {
   console.log(result);
   return (
     <View style={styles.container}>
-      <Image
-        source={{ uri: result.image_url }} 
-        style={styles.image}
-      />
+      <Image source={{ uri: result.image_url }} style={styles.image} />
       <Text style={styles.name}>{result.name}</Text>
-      <Text>{result.rating} Stars, {result.review_count} Reviews</Text>
+      <Text>
+        {result.rating} Stars, {result.review_count} Reviews
+      </Text>
     </View>
-  )
-}
+  );
+};
 
 export default ResultsDetail;
 
@@ -29,5 +28,5 @@ const styles = StyleSheet.create({
   },
   name: {
     fontWeight: "bold",
-  }
+  },
 });
