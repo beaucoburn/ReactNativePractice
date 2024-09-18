@@ -4,8 +4,8 @@ import ResultsDetail from "./ResultsDetail";
 
 const ResultsList = ({ title, results }) => {
   return (
-    <View style={styles.searchBar}>
-      <Text style={styles.titleStyle}>{title}</Text>
+    <View style={styles.constainer}>
+      <Text style={styles.title}>{title}</Text>
       <FlatList
         horizontal
         data={results}
@@ -19,10 +19,15 @@ const ResultsList = ({ title, results }) => {
 };
 
 const styles = StyleSheet.create({
-  titleStyle: {
+  title: {
     fontSize: 18,
     fontWeight: "bold",
+    marginLeft: 15,
+    marginBottom: 5,
   },
+  constainer: {
+    marginBottom: 10,
+  }
 });
 
 export default ResultsList;
