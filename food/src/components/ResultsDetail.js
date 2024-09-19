@@ -14,8 +14,6 @@ const ResultsDetail = ({ result }) => {
   );
 };
 
-export default ResultsDetail;
-
 const styles = StyleSheet.create({
   container: {
     marginLeft: 15,
@@ -30,3 +28,5 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
 });
+
+export default ResultsDetail;
