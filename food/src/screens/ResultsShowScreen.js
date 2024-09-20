@@ -5,7 +5,7 @@ import yelp from "../api/yelp";
 const ResultsShowScreen = ({ navigation }) => {
   const [result, setResult] = useState(null);
   const id = navigation.getParam('id');
-
+  
   const getResult = async (id) => {
    const response = await yelp.get(`/${id}`); 
     setResult(response.data);
@@ -14,6 +14,10 @@ const ResultsShowScreen = ({ navigation }) => {
   useEffect(() => {
     getResult(id);
   }, []);
+
+  if (!result) {
+    return null;
+  }
 
   return (
     <View>
