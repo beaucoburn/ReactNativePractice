@@ -20,8 +20,8 @@ export default () => {
     }
   }
 
-  useEffect((term) => {
-    searchApi(term);
+  useEffect(() => {
+    searchApi('pasta');
   }, []);
 
   return [searchApi, results, errorMessage];
