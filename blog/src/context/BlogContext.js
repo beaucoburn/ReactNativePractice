@@ -13,7 +13,9 @@ export const BlogProvider = ({ children }) => {
   };
 
   return (
-    <BlogContext.Provider value={blogPosts}>{children}</BlogContext.Provider>
+    <BlogContext.Provider value={{ data: blogPosts, addBlogPost }}>
+      {children}
+    </BlogContext.Provider>
   );
 };
 
