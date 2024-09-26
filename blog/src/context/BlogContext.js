@@ -8,7 +8,7 @@ export const BlogProvider = ({ children }) => {
   const addBlogPost = () => {
     setBlogPosts([
       ...blogPosts,
-      { title: `Blog Post #{blogPosts.length + 1}` },
+      { title: `Blog Post #${blogPosts.length + 1}` },
     ]);
   };
 
