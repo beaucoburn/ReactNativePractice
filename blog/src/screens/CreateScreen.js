@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { View, Text, TextInput, StyleSheet } from "react-native";
 import { Context } from "../context/BlogContext";
 
-const ShowScreen = ({ navigation }) => {
+const CreateScreen = ({ navigation }) => {
   return (
     <View>
       <Text>Enter Title:</Text>
@@ -15,4 +15,4 @@ const ShowScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({});
 
-export default ShowScreen;
+export default CreateScreen;
