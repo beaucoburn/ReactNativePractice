@@ -3,12 +3,15 @@ import { View, Text, TextInput, StyleSheet } from "react-native";
 import { Context } from "../context/BlogContext";
 
 const CreateScreen = ({ navigation }) => {
+  const [title, setTitle] = useState("");
+  const [content, setContent] = useState("");
+  
   return (
     <View>
       <Text>Enter Title:</Text>
-      <TextInput placeholder="Title" />
+      <TextInput value={title} onChangeText={(text) => setTitle(text)} placeholder="Title" />
       <Text>Enter Content:</Text>
-      <TextInput placeholder="Content" />
+      <TextInput value={content} onChangeText={(text) => setContent(text)} placeholder="Content" />
     </View>
   )
 };
