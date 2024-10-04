@@ -1,11 +1,14 @@
 import React, { useContext } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, TextInput, StyleSheet } from "react-native";
 import { Context } from "../context/BlogContext";
 
 const ShowScreen = ({ navigation }) => {
   return (
     <View>
-      <Text>Create Screen</Text>
+      <Text>Enter Title:</Text>
+      <TextInput placeholder="Title" />
+      <Text>Enter Content:</Text>
+      <TextInput placeholder="Content" />
     </View>
   )
 };
