@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { Context } from "../context/BlogContext";
-import EvilIcons from 'react-native-vector-icons/EvilIcons';
+import { EvilIcons } from "@expo/vector-icons";
 
 const ShowScreen = ({ navigation }) => {
   const { state } = useContext(Context);
