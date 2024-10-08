@@ -12,7 +12,10 @@ const EditScreen = ({ navigation }) => {
   
   return (
     <View>
-      <TextInput>Edit Screen - {navigation.getParam('id')}</TextInput>
+      <Text>Edit Title:</Text>
+      <TextInput value={title} onChangeText={(setTitle) => setTitle(newTitle)} />
+      <Text>Edit Content:</Text>
+      <TextInput value={content} onChangeText={(setContent) => setContent(newContent)} />
     </View>
   )
 };
