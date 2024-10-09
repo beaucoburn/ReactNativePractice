@@ -21,9 +21,7 @@ const BlogPostForm = () => {
         onChangeText={(text) => setContent(text)}
         placeholder="Content"
       />
-      <Button
-        title="Save Blog Post"
-      />
+      <Button title="Save Blog Post" />
     </View>
   );
 };
