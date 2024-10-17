@@ -7,9 +7,7 @@ const EditScreen = ({ navigation }) => {
   const id = navigation.getParam("id");
   const { state, editBlogPost } = useContext(Context);
 
-  const blogPost = state.find(
-    (blogPost) => blogPost.id === id
-  );
+  const blogPost = state.find((blogPost) => blogPost.id === id);
 
   return (
     <BlogPostForm
