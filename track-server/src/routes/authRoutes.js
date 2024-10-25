@@ -13,7 +13,7 @@ router.post("/signup", async (req, res) => {
 
   res.send("You made a post request");
     } catch (err) {
-      res.status(422).send(err.message);
+      return res.status(422).send(err.message);
     }
 })
 
