@@ -5,6 +5,7 @@ const authRoutes = require("./routes/authRoutes");
 
 const app = express();
 
+app.use(bodyParser.json());
 app.use(authRoutes);
 
 const mongoUri =
