@@ -34,8 +34,10 @@ userSchema.pre("save", function(next) {
   });
 });
 
-userSchema.methods.comparePassword = function() {
+userSchema.methods.comparePassword = function(candidatePassword) {
+  return new Promise((resolve, reject) => {
 
+  })
 }
 
 mongoose.model("User", userSchema);
