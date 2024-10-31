@@ -1,21 +1,21 @@
-const mongoose = require('mongoose');
-const bcrypt = require('bcryptjs');
+const mongoose = require("mongoose");
+const bcrypt = require("bcryptjs");
 
 const userSchema = new mongoose.Schema({
-  email:{
+  email: {
     type: String,
     unique: true,
-    required: true
+    required: true,
   },
-  password:{
+  password: {
     type: String,
-    required: true
+    required: true,
   },
 });
 
-userSchema.pre('save', function(next) {
+userSchema.pre("save", function(next) {
   const user = this;
-  if (!user.isModified('password')){
+  if (!user.isModified("password")) {
     return next();
   }
 
@@ -30,8 +30,12 @@ userSchema.pre('save', function(next) {
       }
       user.password = hash;
       next();
-    })
-  })
-})
+    });
+  });
+});
 
-mongoose.model('User', userSchema);
+userSchema.methods.comparePassword = function() {
+
+}
+
+mongoose.model("User", userSchema);
