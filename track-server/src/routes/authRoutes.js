@@ -20,12 +20,14 @@ router.post("/signup", async (req, res) => {
     }
 })
 
-router.post("/signin", (req, res) => {
+router.post("/signin", async (req, res) => {
   const { email, password } = req.body;
 
   if (!email || !password) {
     return res.status(422).send({ error: "Must provide email and password" })
   }
+
+  const user = await User.findOne({ email });
 })
 
 module.exports = router;
