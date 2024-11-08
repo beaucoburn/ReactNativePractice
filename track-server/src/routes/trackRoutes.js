@@ -14,4 +14,8 @@ router.get("/tracks", async (req, res) => {
   res.send(tracks);
 });
 
+router.post("/tracks", async (req, res) => {
+
+})
+
 module.exports = router;
