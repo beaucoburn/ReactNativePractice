@@ -20,6 +20,8 @@ router.post("/tracks", async (req, res) => {
   if (!name || !locations) {
     return res.status(422).send({ error: "You must provide a name and locations" });
   }
+
+  const track = new Track({ name, locations, userId: req.user._id })
 })
 
 module.exports = router;
