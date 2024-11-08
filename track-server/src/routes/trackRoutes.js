@@ -15,7 +15,11 @@ router.get("/tracks", async (req, res) => {
 });
 
 router.post("/tracks", async (req, res) => {
-
+  const { name, locations } = req.body;
+  
+  if (!name || !locations) {
+    return res.status(422).send({ error: "You must provide a name and locations" });
+  }
 })
 
 module.exports = router;
