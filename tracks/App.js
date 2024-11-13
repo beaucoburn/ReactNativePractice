@@ -23,3 +23,5 @@ const switchNavigator = createSwitchNavigator({
     Account: AccountScreen,
   })
 });
+
+export default createAppContainer(switchNavigator);
