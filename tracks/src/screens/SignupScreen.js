@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
     borderWidth: 10,
     flex: 1,
     justifyContent: 'center',
+    marginBottom: 200,
   }
 });
 
