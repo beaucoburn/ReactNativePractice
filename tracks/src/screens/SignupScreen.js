@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
     borderColor: 'red',
     borderWidth: 10,
     flex: 1,
+    justifyContent: 'center',
   }
 });
 
