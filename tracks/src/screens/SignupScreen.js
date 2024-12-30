@@ -12,7 +12,11 @@ const SignupScreen = ({ navigation }) => {
       <Spacer>
         <Text h3>Sign Up for Tracker</Text>
       </Spacer>
-      <Input label="Email" value={email} onChangeText={setEmail} />
+      <Input
+        label="Email"
+        value={email}
+        onChangeText={(newEmail) => setEmail(newEmail)}
+      />
       <Spacer />
       <Input label="Password" />
       <Spacer>
@@ -32,9 +36,9 @@ const styles = StyleSheet.create({
   container: {
     borderWidth: 10,
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: "center",
     marginBottom: 250,
-  }
+  },
 });
 
 export default SignupScreen;
