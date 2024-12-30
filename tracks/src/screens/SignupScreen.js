@@ -15,7 +15,7 @@ const SignupScreen = ({ navigation }) => {
       <Input
         label="Email"
         value={email}
-        onChangeText={(newEmail) => setEmail(newEmail)}
+        onChangeText={setEmail}
       />
       <Spacer />
       <Input label="Password" />
