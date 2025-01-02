@@ -8,8 +8,10 @@ const authReducer = (state, action) => {
 };
 
 const signup = (dispatch) => {
-  return {
-
+  return ({ email, password }) => {
+    // make api request to sign up with that email and password
+    
+    // if we sign up, modify our state, and say that we are authenticated
   }
 }
 
