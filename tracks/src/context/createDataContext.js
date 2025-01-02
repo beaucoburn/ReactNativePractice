@@ -1,10 +1,10 @@
 import React, { useReducer } from "react";
 
-export default ( reducer, actions, defaultValue ) => {
+export default (reducer, actions, defaultValue) => {
   const Context = React.createContext();
 
-  const Provider = ( { children } ) => {
-    const [state, dispatch] = useReducer( reducer, defaultValue );
+  const Provider = ({ children }) => {
+    const [state, dispatch] = useReducer(reducer, defaultValue);
 
     const boundActions = {};
     for (let key in actions) {
@@ -12,9 +12,9 @@ export default ( reducer, actions, defaultValue ) => {
     }
 
     return (
-      <Context.PRovider value={{ state, ...boundActions }}>
+      <Context.Provider value={{ state, ...boundActions }}>
         {children}
-      </Context.PRovider>
+      </Context.Provider>
     );
   };
 
