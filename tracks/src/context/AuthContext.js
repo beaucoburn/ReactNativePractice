@@ -1,4 +1,4 @@
-import createDataContext from "~/src/context/DataContext";
+import createDataContext from "./createDataContext";
 
 const authReducer = (state, action) => {
   switch (action.type) {
