@@ -7,6 +7,12 @@ const authReducer = (state, action) => {
   }
 };
 
+const signup = (dispatch) => {
+  return {
+
+  }
+}
+
 export const { Provider, Context } = createDataContext(
   authReducer,
   {},
