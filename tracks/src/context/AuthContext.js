@@ -14,8 +14,18 @@ const signup = (dispatch) => {
     // if we sign up, modify our state, and say that we are authenticated
 
     // if signing up fails, we probably need to reflect an error message somewhere
-  }
-}
+  };
+};
+
+const signin = (dispatch) => {
+  return ({ email, password }) => {
+    // Try to signin
+    // Handle success by updating state
+    // Handle failure by showing error message
+  };
+};
+
+
 
 export const { Provider, Context } = createDataContext(
   authReducer,
