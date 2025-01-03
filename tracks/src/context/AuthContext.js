@@ -10,6 +10,12 @@ const authReducer = (state, action) => {
 
 const signup = (dispatch) => {
   return ({ email, password }) => {
+    try {
+      const response = await trackerApi.post('/signup', { email, password });
+      console.log(response.data);
+    } catch (err) {
+      console.log(err.message);
+    }
     // make api request to sign up with that email and password
     
     // if we sign up, modify our state, and say that we are authenticated
