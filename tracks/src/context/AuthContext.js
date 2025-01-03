@@ -14,7 +14,7 @@ const signup = (dispatch) => {
       const response = await trackerApi.post('/signup', { email, password });
       console.log(response.data);
     } catch (err) {
-      console.log(err.response.data);
+      dispatch({ type: 'add_error', payload: 'Something went wrong with sign up.'})
     }
     // make api request to sign up with that email and password
     
@@ -41,5 +41,5 @@ const signout = (dispatch) => {
 export const { Provider, Context } = createDataContext(
   authReducer,
   { signin, signout, signup },
-  { isSignedIn: false },
+  { isSignedIn: false, errorMessage: '' },
 );
