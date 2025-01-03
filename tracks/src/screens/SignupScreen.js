@@ -31,7 +31,7 @@ const SignupScreen = ({ navigation }) => {
         autoCorrect={false}
       />
       <Spacer>
-        <Button title="Sign Up" />
+        <Button title="Sign Up" onPress={() => signup({email, password})} />
       </Spacer>
     </View>
   );
