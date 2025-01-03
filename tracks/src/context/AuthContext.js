@@ -14,7 +14,7 @@ const signup = (dispatch) => {
       const response = await trackerApi.post('/signup', { email, password });
       console.log(response.data);
     } catch (err) {
-      console.log(err.message);
+      console.log(err.response.data);
     }
     // make api request to sign up with that email and password
     
