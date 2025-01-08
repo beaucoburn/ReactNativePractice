@@ -13,8 +13,7 @@ const authReducer = (state, action) => {
   }
 };
 
-const signup = (dispatch) => {
-  return async ({ email, password }) => {
+const signup = (dispatch) => async ({ email, password }) => {
     try {
       const response = await trackerApi.post("/signup", { email, password });
       await AsyncStorage.setItem('token', response.data.token);
@@ -31,7 +30,6 @@ const signup = (dispatch) => {
 
     // if signing up fails, we probably need to reflect an error message somewhere
   };
-};
 
 const signin = (dispatch) => {
   return ({ email, password }) => {
