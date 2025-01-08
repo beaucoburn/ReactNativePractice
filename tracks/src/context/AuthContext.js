@@ -22,7 +22,7 @@ const signup =
         await AsyncStorage.setItem("token", response.data.token);
         dispatch({ type: "signup", payload: response.data.token });
 
-        // navigate to main flow
+        navigate("TrackList");
       } catch (err) {
         dispatch({
           type: "add_error",
