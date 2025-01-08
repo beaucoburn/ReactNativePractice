@@ -16,6 +16,7 @@ const signup = (dispatch) => {
     try {
       const response = await trackerApi.post("/signup", { email, password });
       await AsyncStorage.setItem('token', response.data.token);
+      dispatch({ type: 'signup', payload: response.data.token });
     } catch (err) {
       dispatch({
         type: "add_error",
@@ -47,5 +48,5 @@ const signout = (dispatch) => {
 export const { Provider, Context } = createDataContext(
   authReducer,
   { signin, signout, signup },
-  { isSignedIn: false, errorMessage: "" },
+  { token: null, errorMessage: "" },
 );
