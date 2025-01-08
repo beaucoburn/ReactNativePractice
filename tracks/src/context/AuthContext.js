@@ -6,6 +6,8 @@ const authReducer = (state, action) => {
   switch (action.type) {
     case "add_error":
       return { ...state, errorMessage: action.payload };
+    case 'signup':
+      return { errorMessage: "", token: action.payload };
     default:
       return state;
   }
