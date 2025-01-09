@@ -36,6 +36,8 @@ const SignupScreen = ({ navigation }) => {
       <Spacer>
         <Button title="Sign Up" onPress={() => signup({ email, password })} />
       </Spacer>
+      <TouchableOpacity onPress={() => navigation.navigate('Signin')}>
+      </TouchableOpacity>
     </View>
   );
 };
