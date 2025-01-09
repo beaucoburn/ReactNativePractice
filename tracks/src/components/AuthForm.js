@@ -7,6 +7,7 @@ const AuthForm = () => {
   const [password, setPassword] = useState("");
 
   return (
+    <>
       <Spacer>
         <Text h3>Sign Up for Tracker</Text>
       </Spacer>
@@ -32,6 +33,8 @@ const AuthForm = () => {
       <Spacer>
         <Button title="Sign Up" onPress={() => signup({ email, password })} />
       </Spacer>
+    </>
+  );
 };
 
 const styles = StyleSheet.create({});
