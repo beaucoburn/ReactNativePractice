@@ -7,7 +7,10 @@ const SigninScreen = () => {
   return (
     <View>
       <AuthForm
-        
+        headerText="Sign In to Your Account"
+        errorMessage=""
+        onSubmit={() => {}}
+        submitButtonText="Sign In"
       />
       <NavLink
         text="Don't have an account? Sign up instead."
