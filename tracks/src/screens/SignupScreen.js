@@ -16,13 +16,6 @@ const SignupScreen = ({ navigation }) => {
         submitButtonText="Sign up"
         onSubmit={signup}
       />
-      <TouchableOpacity onPress={() => navigation.navigate("Signin")}>
-        <Spacer />
-        <Text style={styles.link}>
-          Already have an account? Sign in instead.
-        </Text>
-        <Spacer />
-      </TouchableOpacity>
     </View>
   );
 };
