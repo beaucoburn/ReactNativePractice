@@ -5,7 +5,7 @@ import NavLink from "../components/NavLink";
 
 const SigninScreen = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <AuthForm
         headerText="Sign In to Your Account"
         errorMessage=""
