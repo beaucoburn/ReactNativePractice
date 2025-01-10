@@ -3,12 +3,12 @@ import { Text, TouchableOpacity, StyleSheet } from "react-native";
 import Spacer from "./Spacer";
 import { withNavigation } from "react-navigation";
 
-const NavLink = ({ navigation }) => {
+const NavLink = ({ navigation, text, routeName }) => {
   return (
-      <TouchableOpacity onPress={() => navigation.navigate("Signin")}>
+      <TouchableOpacity onPress={() => navigation.navigate(routeName)}>
         <Spacer />
         <Text style={styles.link}>
-          Already have an account? Sign in instead.
+          {text}
         </Text>
         <Spacer />
       </TouchableOpacity>
