@@ -20,8 +20,10 @@ const SigninScreen = () => {
   )
 };
 
-SigninScreen.navigationOptions = {
-  header: null,
+SigninScreen.navigationOptions = () => {
+  return {
+    headerShown: false,
+  };
 };
 
 const styles = StyleSheet.create({
