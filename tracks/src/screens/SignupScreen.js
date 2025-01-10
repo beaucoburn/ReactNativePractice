@@ -4,6 +4,7 @@ import { Text } from "react-native-elements";
 import Spacer from "../components/Spacer";
 import { Context as AuthContext } from "../context/AuthContext";
 import AuthForm from "../components/AuthForm";
+import NavLink from "../components/NavLink";
 
 const SignupScreen = ({ navigation }) => {
   const { state, signup } = useContext(AuthContext);
@@ -15,6 +16,9 @@ const SignupScreen = ({ navigation }) => {
         errorMessage={state.errorMessage}
         submitButtonText="Sign up"
         onSubmit={signup}
+      />
+      <NavLink
+      
       />
     </View>
   );
@@ -33,9 +37,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     marginBottom: 250,
   },
-  link: {
-    color: "blue",
-  },
-});
+  });
 
 export default SignupScreen;
