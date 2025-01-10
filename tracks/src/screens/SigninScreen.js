@@ -20,6 +20,9 @@ const SigninScreen = () => {
   )
 };
 
+SigninScreen.navigationOptions = {
+  header: null,
+
 const styles = StyleSheet.create({});
 
 export default SigninScreen;
