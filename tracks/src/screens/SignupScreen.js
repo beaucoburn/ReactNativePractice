@@ -36,6 +36,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     marginBottom: 250,
   },
-  });
+});
 
 export default SignupScreen;
