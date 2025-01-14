@@ -33,6 +33,11 @@ const signup =
 
 const signin = (dispatch) => {
   return ({ email, password }) => {
+    try {
+
+    } catch (err) {
+
+    }
     // Try to signin
     // Handle success by updating state
     // Handle failure by showing error message
