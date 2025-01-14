@@ -36,11 +36,11 @@ const signin = (dispatch) => {
     try {
 
     } catch (err) {
-
+      dispatch({
+        type: 'add_error',
+        payload: 'Something went wrong with sign in.',
+      })
     }
-    // Try to signin
-    // Handle success by updating state
-    // Handle failure by showing error message
   };
 };
 
