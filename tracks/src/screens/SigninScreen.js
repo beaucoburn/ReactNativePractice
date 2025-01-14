@@ -1,4 +1,4 @@
-import React, { useContext }from "react";
+import React, { useContext } from "react";
 import { View, StyleSheet, Text } from "react-native";
 import AuthForm from "../components/AuthForm";
 import NavLink from "../components/NavLink";
@@ -18,9 +18,9 @@ const SigninScreen = () => {
       <NavLink
         text="Don't have an account? Sign up instead."
         routeName="Signup"
-    />
+      />
     </View>
-  )
+  );
 };
 
 SigninScreen.navigationOptions = () => {
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     marginBottom: 250,
-  }
+  },
 });
 
 export default SigninScreen;
