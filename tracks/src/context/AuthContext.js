@@ -36,6 +36,8 @@ const signin =
   async ({ email, password }) => {
     try {
       const response = await trackerApi.post("/signin", { email, password });
+      await AsyncStorage.setItem("token", response.data.token);
+
     } catch (err) {
       dispatch({
         type: "add_error",
