@@ -35,6 +35,7 @@ const signin =
   (dispatch) =>
   async ({ email, password }) => {
     try {
+      const response = await trackerApi.post("/signin", { email, password });
     } catch (err) {
       dispatch({
         type: "add_error",
