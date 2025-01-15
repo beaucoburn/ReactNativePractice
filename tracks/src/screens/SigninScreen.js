@@ -10,9 +10,7 @@ const SigninScreen = () => {
 
   return (
     <View style={styles.container}>
-      <NavigationEvents
-        onWillBlur={clearErrorMessage}
-      />
+      <NavigationEvents onWillBlur={clearErrorMessage} />
       <AuthForm
         headerText="Sign In to Your Account"
         errorMessage={state.errorMessage}
