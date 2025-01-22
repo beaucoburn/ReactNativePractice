@@ -13,7 +13,7 @@ import { setNavigator } from "./src/navigationRef";
 import ResolveAuthScreen from "./src/screens/ResolveAuthScreen";
 
 const switchNavigator = createSwitchNavigator({
-
+  ResolveAuth: ResolveAuthScreen,
   loginFlow: createStackNavigator({
     Signup: SignupScreen,
     Signin: SigninScreen,
